@@ -12,7 +12,7 @@ const usersSchema = new Schema(
   }
 );
 
-usersSchema.methods.toJson = function () {
+usersSchema.methods.toJSON = function () {
   const obj = this.toObject();
   delete obj.password;
   return obj;
